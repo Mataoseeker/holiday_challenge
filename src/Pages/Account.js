@@ -5,6 +5,7 @@ import { useState } from 'react';
 const Account = () => {
     const [navbar, setNavbar] = useState(false);
     const { user, logOut } = useUserContext();
+    
     return ( 
         <div className="account">
             <br />
@@ -71,16 +72,23 @@ const Account = () => {
             <div className="account-info">
                 
                 <div className="">
-                <h3 className='text-center text-2xl md:text-4xl mt-8'>Courses Available</h3>
-                <div className='grid md:grid-cols-2 p-6'>
-                    <button className="bg-purple-800  rounded-lg p-4 text-white md:ml-4 mt-3">Technical Writing</button>
-                    <button className="bg-blue-800  rounded-lg p-4 text-white md:ml-4 mt-3">Open Source Contribution</button>
-                    <button className="bg-blue-800  rounded-lg p-4 text-white md:ml-4 mt-3">Web Development</button>
-                    <button className="bg-purple-800   rounded-lg p-4 text-white md:ml-4 mt-3">Data Science</button>
-                    <button className="bg-blue-800  rounded-lg p-4 text-white md:ml-4 mt-3">Software Engineering</button>
-                    <button className="bg-purple-800  rounded-lg p-4 text-white md:ml-4 mt-3">Mobile Development</button>
-                    <button className="bg-purple-800  rounded-lg p-4 text-white md:ml-4 mt-3">UI/UX Design</button>
-                    <button className="bg-blue-800 rounded-lg p-4 text-white md:ml-4 mt-3">Digital Marketing</button>
+                <h3 className='text-center text-2xl md:text-4xl mt-8'>Different Courses for Absolute Beginners</h3>
+                <div className='grid md:grid-cols-2 p-6 text-center'>
+                    <a href="https://www.freecodecamp.org/news/technical-writing-for-beginners/" className="bg-purple-800  rounded-lg p-4 text-white md:ml-4 mt-3">Technical Writing</a>
+
+                    <a href="https://www.freecodecamp.org/news/how-to-contribute-to-open-source-projects-beginners-guide/" className="bg-blue-800  rounded-lg p-4 text-white md:ml-4 mt-3">Open Source Contribution </a>
+
+                    <a href='https://careerfoundry.com/en/tutorials/web-development-for-beginners/introduction-to-web-development/' className="bg-blue-800  rounded-lg p-4 text-white md:ml-4 mt-3"><button>Web Development</button></a>
+
+                   <a href='https://www.guru99.com/data-science-tutorial.html' className="bg-purple-800   rounded-lg p-4 text-white md:ml-4 mt-3"> <button >Data Science</button></a>
+
+                   <a href='https://www.guru99.com/software-engineering-tutorial.html' className="bg-blue-800  rounded-lg p-4 text-white md:ml-4 mt-3"> <button >Software Engineering</button></a>
+
+                  <a href='https://www.creativebloq.com/advice/mobile-app-design' className="bg-purple-800  rounded-lg p-4 text-white md:ml-4 mt-3">  <button >Mobile App Development</button> </a>
+
+                   <a href='https://www.freecodecamp.org/news/ui-ux-design-tutorial-from-zero-to-hero-with-wireframe-prototype-figma/' className="bg-purple-800  rounded-lg p-4 text-white md:ml-4 mt-3"> <button >UI/UX Design</button> </a>
+
+                    <a href='https://www.thinkful.com/blog/digital-marketing-for-beginners/' className="bg-blue-800 rounded-lg p-4 text-white md:ml-4 mt-3"><button>Digital Marketing</button> </a>
                     </div>
                 </div>
             </div>

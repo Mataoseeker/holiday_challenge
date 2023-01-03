@@ -71,7 +71,7 @@ const DashBoard = () => {
             <div className="ml-36 md:ml-64">
                 <img src={require("./avatar5.jpg")} alt="avatar" className='rounded-full w-20 md:w-28 mt-20 md:ml-96'/>
             </div>
-        <div className="mt-18 text-center text-xl md:text-4xl">
+        <div className="mt-18 text-center p-6 text-xl md:text-4xl">
             <h1 className='mt-10'>Welcome to <span style={{color:"rgb(94, 94, 245)"}}>Altsch</span> Academy</h1>
             <h3>Discover the in-demand abilities you'll need to go from a beginner <br />
             to industry-ready in just a year. You don't need a degree or previous  <br />
